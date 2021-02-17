@@ -310,7 +310,7 @@
 							<div class="col-xl-8 offset-xl-2">
 								<div class="service-preview flex">
 									<div class="left">
-										<h1 class="title">Bulud infrastrukturu</h1>
+										<h1 class="title">Compute</h1>
 										<h2 class="subtitle">İnfrastrukturanuza uyğunlaşan və biznes artımı idarə eyməyə imkan verən elsatikliyi</h2>
 									</div>
 									<div class="right">
@@ -383,7 +383,7 @@
 											<img src="images/feature-card-title.png" alt="title">
 										</div>
 										<div class="featured-product-card__product-subtitle">
-											<img src="images/feature-card-subtitle.png" alt="sub-title">
+											<img src="images/card-up-element.png" alt="sub-title">
 											<p>Entry-level</p>
 										</div>
 										<div class="featured-product-card__product-info">
@@ -400,7 +400,7 @@
 											<p>ACS</p>
 										</div>
 										<div class="featured-product-card__product-subtitle">
-											<img src="images/feature-card-subtitle.png" alt="sub-title">											
+											<img src="images/card-up-element.png" alt="sub-title">											
 											<p style="font-size: 36px;">Accelerated</p>
 										</div>
 										<div class="featured-product-card__product-info">
@@ -417,7 +417,7 @@
 											<p>ACS</p>
 										</div>
 										<div class="featured-product-card__product-subtitle">
-											<img src="images/feature-card-subtitle.png" alt="sub-title">
+											<img src="images/card-up-element.png" alt="sub-title">
 											<p>Ultimate</p>
 										</div>
 										<div class="featured-product-card__product-info">
@@ -489,49 +489,78 @@
 				<div class="container-fluid gray">
 					<div class="row">
 						<div class="col-xl-8 offset-xl-2">
-							<p class="container-title">Main Features</p>
+							<div>
+								<p class="container-title">Main Features</p>
+							</div>
+							
+							<div class="carousel-container">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<a class="slider-company-thumb" href="#" target="_blank">
+												<p class="title">OS</p>
+												<p class="descriptions">RedHat Enterprise Linux (versions), Ubuntu (versions), <br>
+													Suse Linux (versions), Fedora (versions),<br> Windows server (versions)</p>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="slider-company-thumb" href="#" target="_blank">
+												<p>Snapshots</p>
+												<p>Create snapshot and keep them in ASB Standard</p>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="slider-company-thumb" href="#" target="_blank">
+												<p>Images</p>
+												<p>Ability to boot templates from snapshots </p>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="slider-company-thumb" href="#" target="_blank">
+												<p>Logging</p>
+												<p>Recording of actions performed on created file system</p>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="slider-company-thumb" href="#" target="_blank">
+												<p>Metrics</p>
+												<p>Total volume size size, used space on volume size, IOPS usage</p>
+											</a>
+										</div>
+									</div>
+
+									<div class="swiper-pagination"></div>
+
+									<div class="swiper-button-prev masked hidden-991">
+										<i class="icon-arrow-left"></i>
+									</div>
+									<div class="swiper-button-next masked hidden-991">
+										<i class="icon-arrow-right"></i>
+									</div>
+								</div>
+							</div>
+							
 						</div>
-
-						<div class="slideshow-container" style="width:100%">
-
-							<div class="mySlides fade">
-							  <img src="images/slideshow.png" style="width:100%">
-							  <div class="text">OS</div>
-							</div>
-							
-							<div class="mySlides fade">
-								<img src="images/slideshow.png" style="width:100%">
-								<div class="text">OS</div>
-							</div>
-							
-							<div class="mySlides fade">
-								<img src="images/slideshow.png" style="width:100%">
-								<div class="text">OS</div>
-							</div>
-							
-							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlides(1)">&#10095;</a>
-							
-						</div>
-
 						<div class="col-xl-8 offset-xl-2">
 							<p class="container-title">Additional Features</p>
-							<div>
-								<div>
+							<div class="additional-features">
+								<div class="features-section__left">
 									<p>Auto Acaling</p>
-									<hr>
+									<div class="hr-line"></div>
 									<p>Switch ON/OFF (Stop / Terminate) – virtual machine behavior when an OS-level shutdown is performed</p>
 								</div>
 								
-								<div>
+								<div class="features-section__right">
 									<p>Termination protection – protection of virtual machines from being accidentally terminated</p>
-									<hr>
+									<div class="hr-line" style="width: 100%;"></div>
 									<p>Termination protection – protection of virtual machines from being accidentally terminated.	</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div>
+				
 				<!-- Additional Features -->
 
 				<div class="service-calculator ptb-11">
