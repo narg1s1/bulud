@@ -354,6 +354,22 @@
 				</div>
 				<!-- Service description-->
 
+				<!-- Service-info -->
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xl-8 offset-xl-2 info__network">
+							<div class="button-container_network">
+								<button>ALB-A</button>
+								<button>ALB-N</button>
+							</div>
+							<p>
+								ALB-A  (AZCLOUD Application Load Balancer)– operates on Layer 7, allowing customers to automatically route traffic on application level. ALB-A automatically distributes incoming application traffic across multiple targets, such as ACS instances, containers, and IP addresses layer 7 load balamncer that rotes connections based on the content of the request.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Service-info -->
+
 				<!-- Categories menu-->
 				<div class="categories">
 					<div class="bg-video ">
@@ -378,26 +394,28 @@
 				<!-- Categories menu-->
 
 				<!-- Benefits -->
-				<div class="container-fluid">
+				<div class="container-fluid gray" id="network">
 					<div class="row">
 						<div class="col-xl-8 offset-xl-2 info__network">
 							<p class="container-title">Benefits</p>
 							<ul class="benefits-list_network">
 								<li>
 									<img src="images/full-control.png">
+									<img src="images/dash.png" style="margin-top: 15px;">
 									<div>
 										<p class="title">Layer-7 Load Balancing</p>
-										<p>ALB can load
-											balance HTTP/HTTPS traffic to targets –
-											Azcloud VMs based on request
-											attributes (such as X-Forwarded-Proto,
-											X-Forwarded-Port, or X-Forwarded-For
+										<p>ALB can load <br>
+											balance HTTP/HTTPS traffic to targets – <br>
+											Azcloud VMs based on request <br>
+											attributes (such as X-Forwarded-Proto, <br>
+											X-Forwarded-Port, or X-Forwarded-For <br>
 											headers).</p>
 									</div>
 								</li>
 								
 								<li>
 									<img src="images/elasticity.png">
+									<img src="images/dash.png" style="margin-top: 15px;">
 									<div>
 										<p class="title">Elasticity</p>
 										<p>Automatically scale up storage capacity</p>
@@ -405,53 +423,59 @@
 								</li>
 								<li>
 									<img src="images/security.png">
+									<img src="images/dash.png" style="margin-top: 15px;">
 									<div>
 										<p class="title">Security</p>
-										<p>– ALB enables to create and
-											manage security groups associated with
-											load balancing to provide additional
-											networking and security options.
-											Elasticity – automatically scale up
+										<p>– ALB enables to create and <br>
+											manage security groups associated with <br>
+											load balancing to provide additional <br>
+											networking and security options. <br>
+											Elasticity – automatically scale up <br>
 											storage capacity</p>
 									</div>
 								</li>
 								<li>
-									<img src="images/full-control.png">
+									<img src="images/flexibility.png">
+									<img src="images/dash.png" style="margin-top: 15px;">
 									<div>
-										<p class="title">Layer-7 Load Balancing</p>
-										<p>ALB can load
-											balance HTTP/HTTPS traffic to targets –
-											Azcloud VMs based on request
-											attributes (such as X-Forwarded-Proto,
-											X-Forwarded-Port, or X-Forwarded-For
-											headers).</p>
+										<p class="title">Flexibility</p>
+										<p>You will be able to change
+											your backend <br> infrastructure without
+											affecting the <br> availability of your
+											services, enabling seamless <br> horizontal
+											scaling, rolling deployments, large <br>
+											architecture redesigns, and more
+											</p>
 									</div>
 								</li>
 								<li>
 									<img src="images/cost.png">
+									<img src="images/dash.png" style="margin-top: 15px;">
 									<div>
 										<p class="title">Load Sharing</p>
-										<p>Sharing the processing
-											workload among a group of servers
-											rather than relying on a single server
-											prevents Azcloud VMs from being
+										<p>Sharing the processing <br>
+											workload among a group of servers <br>
+											rather than relying on a single server <br>
+											prevents Azcloud VMs from being <br>
 											overwhelmed by requests.</p>
 									</div>
 								</li>
 								<li>
-									<img src="images/cost.png">
+									<img src="images/scalability.png">
+									<img src="images/dash.png" style="margin-top: 15px;">
 									<div>
 										<p class="title">TLS Offloading</p>
-										<p>– with ALB-A customers
-											can create an HTTPS listener, which
-											 uses encrypted connections (also
-											known as SSL offload). This feature
-											enables traffic encryption between your load balancer and the clients that
-											initiate SSL or TLS sessions. This
-											enables you to offload TLS termination
-											 tasks to the load balancer while
+										<p>– with ALB-A customers <br>
+											can create an HTTPS listener, which <br>
+											 uses encrypted connections (also <br>
+											known as SSL offload). This feature <br>
+											enables traffic encryption between your load <br>
+											balancer and the clients that
+											initiate SSL or <br> TLS sessions. This
+											enables you to offload TLS <br> termination
+											 tasks to the load balancer while <br>
 											preserving the source IP address for
-											your back-end applications</p>
+											your <br> back-end applications</p>
 									</div>
 								</li>
 							</ul>
@@ -461,7 +485,7 @@
 				<!-- Benefits -->
 
 				<!--Use Cases-->
-				<div class="container-fluid blue">
+				<div class="container-fluid blue" id="cases">
 					<div class="row">
 						<div class="col-xl-8 offset-xl-2 cases-section__network">
 							<div class="first-cases-section">
@@ -474,10 +498,10 @@
 									<div class="cases-section_buttons">
 										<button type="button">Business critical applications</button>
 										<button type="button">Database clasters.</button>
-										<button type="button">A cluster of FTPS or SFTP servers with common storage media</button>
-										<button type="button">Legacy applications that implement custom protocol.</button>
+										<button type="button">A cluster of FTPS or SFTP servers with <br> common storage media</button>
+										<button type="button">Legacy applications that implement <br> custom protocol.</button>
 										<button type="button">For horizontal scaling infrastructure</button>
-										<button type="button">High performance queue servers (ActiveMQ, RabbitMQ, ZeroMQ etc.).</button>
+										<button type="button">High performance queue servers <br> (ActiveMQ, RabbitMQ, ZeroMQ etc.).</button>
 									</div>
 								</div>
 							</div>
@@ -486,26 +510,8 @@
 				</div>
 				<!--Use Cases-->
 
-				<!--  -->
-				
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xl-8 offset-xl-2 info__network">
-							<div class="button-container_network">
-								<button>ALB-A</button>
-								<button>ALB-N</button>
-							</div>
-							<p>
-								ALB-A  (AZCLOUD Application Load Balancer)– operates on Layer 7, allowing customers to automatically route traffic on application level. ALB-A automatically distributes incoming application traffic across multiple targets, such as ACS instances, containers, and IP addresses layer 7 load balamncer that rotes connections based on the content of the request.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<!--  -->
-
 				<!-- Features -->
-				<div class="container-fluid gray">
+				<div class="container-fluid gray" id="features">
 					<div class="row">
 						<div class="col-xl-8 offset-xl-2">
 							<div>
@@ -581,69 +587,90 @@
 
 				
 				<!--Categories & Families-->
-				<!-- <div class="container-fluid">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xl-8 offset-xl-2">
-							<p class="container-title"></p>
-
 							<div class="features-section">
-
 								<div class="featured-product-card_network">
 									<div class="featured-product-card__card-network">
-										<div class="featured-product-card__product-title">
+										<div class="featured-network-card__product-title">
 											<p>ACS</p>
 											<img src="images/feature-card-title.png" alt="title">
 										</div>
-										<div>
+										<div class="featured-product-card-content">
 											<h2>Standart</h2>
-											<p>ALB-A Standard is the best choice for Static websites and blogs with low to moderate traffic.</p>
-											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). FREE for ALB Standard</p>
+											<p style="color: #080A70; font-size: 18px;">ALB-A <b>Standard</b> is the best choice for Static websites and blogs with low to moderate traffic.</p>
+											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). <b>FREE</b> for ALB Standard</p>
 											<div></div>
 											<a href="#">Collapse all</a>
 										</div>
-										<div>
-											<img src="images/card-down-element.png" alt="sub-title">	
-											<p>29</p>
+										<div class="footer-price">
+											<div class="featured-product-card-price">
+												<p class="product-price">29</p>
+												<div style="text-align: left;">
+													<p class="product-price-currency">AZN</p>
+													<p class="product-price-rate">/ per month</p>
+												</div>
+											</div>
+											<div style="position: relative;">
+												<img src="images/card-down-element.png" alt="sub-title">
+											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="featured-product-card_network">
 									<div class="featured-product-card__card-network">
-										<div class="featured-product-card__product-title">
-											<img src="images/feature-card-title.png" alt="title">
+										<div class="featured-network-card__product-title">
 											<p>ACS</p>
+											<img src="images/feature-card-title.png" alt="title">
 										</div>
-										<div>
-											<h2>Standart</h2>
-											<p>ALB-A Standard is the best choice for Static websites and blogs with low to moderate traffic.</p>
-											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). FREE for ALB Standard</p>
+										<div class="featured-product-card-content">
+											<h2>Ultra</h2>
+											<p style="color: #080A70; font-size: 18px;">ALB-A <b>Ultro</b> is the best choice for Static websites and blogs with low to moderate traffic.</p>
+											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). <b>FREE</b> for ALB Standard</p>
 											<div></div>
 											<a href="#">Collapse all</a>
 										</div>
-										<div>
-											<img src="images/card-down-element.png" alt="sub-title">	
-											<p>29</p>
+										<div class="footer-price">
+											<div class="featured-product-card-price">
+												<p class="product-price">49</p>
+												<div style="text-align: left;">
+													<p class="product-price-currency">AZN</p>
+													<p class="product-price-rate">/ per month</p>
+												</div>
+											</div>
+											<div style="position: relative;">
+												<img src="images/card-down-element.png" alt="sub-title">
+											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="featured-product-card_network">
 									<div class="featured-product-card__card-network">
-										<div class="featured-product-card__product-title">
-											<img src="images/feature-card-title.png" alt="title">
+										<div class="featured-network-card__product-title">
 											<p>ACS</p>
+											<img src="images/feature-card-title.png" alt="title">
 										</div>
-										<div>
-											<h2>Standart</h2>
-											<p>ALB-A Standard is the best choice for Static websites and blogs with low to moderate traffic.</p>
-											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). FREE for ALB Standard</p>
+										<div class="featured-product-card-content">
+											<h2>Turbo</h2>
+											<p style="color: #080A70; font-size: 18px;">ALB-A <b>Turbo</b> is the best choice for Static websites and blogs with low to moderate traffic.</p>
+											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). <b>FREE</b> for ALB Standard</p>
 											<div></div>
 											<a href="#">Collapse all</a>
 										</div>
-										<div>
-											<img src="images/card-down-element.png" alt="sub-title">	
-											<p>29</p>
+										<div class="footer-price">
+											<div class="featured-product-card-price">
+												<p class="product-price">95</p>
+												<div style="text-align: left;">
+													<p class="product-price-currency">AZN</p>
+													<p class="product-price-rate">/ per month</p>
+												</div>
+											</div>
+											<div style="position: relative;">
+												<img src="images/card-down-element.png" alt="sub-title">
+											</div>
 										</div>
 									</div>
 								</div>
@@ -652,11 +679,11 @@
 
 						</div>
 					</div>
-				</div> -->
+				</div>
 				<!--Categories & Families-->
 
 				<!-- Calculator -->
-				<div class="service-calculator ptb-11">
+				<div class="service-calculator ptb-11" id="prices">
 					<div class="bg-video">
 						<video class="lazy" autoplay muted loop playsinline>
 							<source data-src="videos/network.mp4" type="video/mp4">
