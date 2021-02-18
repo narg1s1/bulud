@@ -1,3 +1,7 @@
+.sticky {
+    top: -24px;
+}
+
 .button-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -6,9 +10,9 @@
 }
 
 .service-button {
+    padding: 16px 32px;
     font-size: 16px;
     color: white;
-    padding: 16px 32px;
     background: rgba(255, 255, 255, 0.1);
 }
 
