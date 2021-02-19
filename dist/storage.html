@@ -554,7 +554,6 @@
 				<!--  Features -->
 
 				<!-- Calculator -->
-
 				<div class="service-calculator ptb-11" id="prices">
 					<div class="bg-video">
 						<video class="lazy" autoplay muted loop playsinline>
@@ -572,19 +571,19 @@
 										<div class="fields-group-wrapper family">
 											<p class="group-label">Family</p>
 											<div class="fields-group">
-												<div>
+												<div onclick="openFamily('family-c')">
 													<div class="field-item">
 														<input type="radio" name="family" id="os-family-c" checked>
 														<label for="os-family-c">C - Entry</label>
 													</div>
 												</div>
-												<div>
+												<div onclick="openFamily('family-b')">
 													<div class="field-item">
 														<input type="radio" name="family" id="os-family-b">
 														<label for="os-family-b">B - Accelerated</label>
 													</div>
 												</div>
-												<div>
+												<div onclick="openFamily('family-a')">
 													<div class="field-item">
 														<input type="radio" name="family" id="os-family-a">
 														<label for="os-family-a">A - Ultimate</label>
@@ -597,13 +596,13 @@
 											<div class="fields-group-wrapper">
 												<p class="group-label">Operation system</p>
 												<div class="fields-group">
-													<div>
+													<div onclick="openSystem('linux')">
 														<div class="field-item">
 															<input type="radio" name="os" id="os-linux" checked>
 															<label for="os-linux">Linux</label>
 														</div>
 													</div>
-													<div>
+													<div onclick="openSystem('linux')">
 														<div class="field-item">
 															<input type="radio" name="os" id="os-windows">
 															<label for="os-windows">Windows</label>
@@ -614,7 +613,7 @@
 										</div>
 									</div>
 									
-									<table class="table">
+									<table class="table" id="family-c">
 										<thead>
 										  <tr>
 											<th scope="col">Name</th>
@@ -661,7 +660,7 @@
 										  <tr>
 											<th scope="row">C1.2</th>
 											<td>16</td>
-											<td>31GB</td>
+											<td>32GB</td>
 											<td>20GB</td>
 											<td>0.483 AZN/hour</td>
 											<td class="action"><a href="#"> Əldə et</a></td>
@@ -684,6 +683,164 @@
 										  </tr>
 										  <tr>
 											<th scope="row">C1.2</th>
+											<td>256</td>
+											<td>128GB</td>
+											<td>20GB</td>
+											<td>0.390 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										</tbody>
+									</table>
+
+									<table class="table" id="family-b" style="display: none;">
+										<thead>
+										  <tr>
+											<th scope="col">Name</th>
+											<th scope="col">vCPU</th>
+											<th scope="col">RAM</th>
+											<th scope="col">Root <br> Volume</th>
+											<th scope="col">Price</th>
+											<th scope="col"></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th scope="row">B1.2</th>
+											<td>1</td>
+											<td>2GB</td>
+											<td>20GB</td>
+											<td>0.037 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">B1.2</th>
+											<td>2</td>
+											<td>4GB</td>
+											<td>20GB</td>
+											<td>0.637 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">B1.2</th>
+											<td>4</td>
+											<td>8GB</td>
+											<td>20GB</td>
+											<td>0.126 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">B1.2</th>
+											<td>8</td>
+											<td>16GB</td>
+											<td>20GB</td>
+											<td>0.245 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">B1.2</th>
+											<td>16</td>
+											<td>32GB</td>
+											<td>20GB</td>
+											<td>0.483 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">B1.2</th>
+											<td>32</td>
+											<td>64GB</td>
+											<td>20GB</td>
+											<td>0.958 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">B1.2</th>
+											<td>64</td>
+											<td>64GB</td>
+											<td>20GB</td>
+											<td>0.55 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">B1.2</th>
+											<td>256</td>
+											<td>128GB</td>
+											<td>20GB</td>
+											<td>0.390 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										</tbody>
+									</table>
+
+									<table class="table" id="family-a" style="display: none;">
+										<thead>
+										  <tr>
+											<th scope="col">Name</th>
+											<th scope="col">vCPU</th>
+											<th scope="col">RAM</th>
+											<th scope="col">Root <br> Volume</th>
+											<th scope="col">Price</th>
+											<th scope="col"></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th scope="row">A1.2</th>
+											<td>1</td>
+											<td>2GB</td>
+											<td>20GB</td>
+											<td>0.037 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">A1.2</th>
+											<td>2</td>
+											<td>4GB</td>
+											<td>20GB</td>
+											<td>0.637 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">A1.2</th>
+											<td>4</td>
+											<td>8GB</td>
+											<td>20GB</td>
+											<td>0.126 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">A1.2</th>
+											<td>8</td>
+											<td>16GB</td>
+											<td>20GB</td>
+											<td>0.245 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">A1.2</th>
+											<td>16</td>
+											<td>32GB</td>
+											<td>20GB</td>
+											<td>0.483 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">A1.2</th>
+											<td>32</td>
+											<td>64GB</td>
+											<td>20GB</td>
+											<td>0.958 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">A1.2</th>
+											<td>64</td>
+											<td>64GB</td>
+											<td>20GB</td>
+											<td>0.55 AZN/hour</td>
+											<td class="action"><a href="#"> Əldə et</a></td>
+										  </tr>
+										  <tr>
+											<th scope="row">A1.2</th>
 											<td>256</td>
 											<td>128GB</td>
 											<td>20GB</td>

@@ -666,9 +666,5 @@ td a {
         height: 100%;
     }
 
-    .featured-product-card__get-button {
-        width: 100%;
-        padding: 20px 28px;
-        height: 100%;
-    }
+    .featured-product-card__get-button {}
 }
