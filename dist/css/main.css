@@ -3,8 +3,10 @@ img {
     width: 100%;
 }
 
-.active {
+.service-button:active {
     background: #fff;
+    color: #000BAB;
+    font-style: SemiBold;
 }
 
 .button-container {
@@ -12,6 +14,16 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 20px 20px;
+}
+
+.card-service {
+    width: 50%;
+    border-right: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.service-card-wider {
+    width: 100%;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
 .service-button {
@@ -666,5 +678,4 @@ td a {
         height: 100%;
     }
 
-    .featured-product-card__get-button {}
 }
