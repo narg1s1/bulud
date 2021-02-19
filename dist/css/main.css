@@ -1,5 +1,10 @@
-.sticky {
-    top: -24px;
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.active {
+    background: #fff;
 }
 
 .button-container {
@@ -152,9 +157,11 @@
 }
 
 .featured-product-card__product-subtitle p {
+    padding-top: 10rem;
     font-size: 32px;
     font-weight: 700;
     text-align: center;
+    width: 100%;
     color: #080A70;
     justify-self: center;
     display: grid;
@@ -194,16 +201,21 @@
     grid-gap: 60px;
 }
 
-.benefits-list li img {
+.benefits-list .benefits-list-item img {
     width: 32px;
     height: 32px;
 }
 
-.benefits-list li {
+.benefits-list .benefits-list-item {
     font-size: 24px;
     font-weight: 600;
     color: #000BAB;
     align-self: flex-start;
+}
+
+.benefits-list-types p {
+    line-height: 160%;
+    letter-spacing: 0.04em;
 }
 
 .benefits-content {
@@ -225,10 +237,18 @@
     grid-gap: 50px;
 }
 
-.benefits-list_network li {
+.benefits-list_network .benefits-list-item {
     display: flex;
     align-items: self-start;
     gap: 25px;
+}
+
+.benefits-list_network .benefits-list-item img {
+    width: auto;
+}
+
+.anchors-menu {
+    margin-left: 15%;
 }
 
 .benefits-list_network div {
@@ -240,6 +260,9 @@
     font-size: 24px;
     color: #000BAB;
     font-weight: 600;
+}
+.first-cases-section {
+    width: 100%;
 }
 
 .cases-section {
@@ -289,9 +312,9 @@
     color: #fff;
     text-align: center;
     border: 1px dashed;
-    padding: 10px 10px;
+    padding: 10px 25px;
     text-align: left;
-    margin: 0px 20px 20px 0px;
+    margin: 10px 10px 10px 10px;
 }
 
 .cases-section_buttons button:hover {
@@ -334,10 +357,14 @@
     font-size: 32px;
 }
 
+.sticky {
+    margin-top: -24px;
+    z-index: 10000;
+}
+
 .additional-features {    
     padding-bottom: 10rem;
     display: flex;
-    align-items: baseline;
     width: auto;
 }
 
@@ -345,18 +372,23 @@
     display: grid;
     grid-gap: 30px;
     width: 50%;
+    align-content: end;
 }
 
 .features-section__right {
     display: grid;
     grid-gap: 30px;
-    width: 50%;
+    justify-content: end;
+    width: 50%;    
+    height: 100%;
 }
+
 
 .hr-line {
     border: 1px solid;
     opacity: 0.1;
     width: 95%;
+    height: 0;
 }
 
 .featured-network-card__product-title {
@@ -381,7 +413,7 @@
 .featured-product-card-content {
     display: inline-grid;
     grid-auto-flow: row;
-    padding: 3rem;
+    padding: 4rem;
     display: grid;
     grid-gap: 25px;
 }
@@ -391,10 +423,16 @@
     color: #080A70;
     font-weight: 700;
     text-align: center;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: 0.04em;
 }
 
 .featured-product-card-content p {
     font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.04em;
 }
 
 
@@ -403,7 +441,11 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    grid-gap: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    gap: 10px;
     z-index: 1000;
 }
 
@@ -444,4 +486,189 @@
     justify-items: center;
     justify-self: center;
     align-items: center;
+    position: relative;
+}
+
+.select-options {
+    display: flex;
+}
+
+.select-options p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 48px;
+    width: 100%;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #000BAB;
+}
+
+.select-options img{
+    width: 20px;
+}
+
+.fields-group-tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.family {
+    width: 68%;
+}
+.systems {
+    width: 28%;
+}
+
+.action {
+    text-align: end;
+}
+
+table {
+    width: 100%;
+    margin-top: 6rem;
+}
+
+tr {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+th {
+    padding: 30px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+td {
+    padding: 30px;
+}
+
+td a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+
+@media (max-width: 575px) {
+    .button-container_network {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px 15px;
+    }
+
+    .button-container_network button {
+        padding: 16px 15px;
+    }
+
+    .row {
+        margin-right: 0px; 
+        margin-left: -15px;
+
+    }
+
+    .gray {
+        background-color: #F5F6FB;
+        padding-right: 30px;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        display: flex;
+    }
+
+    .container-title {
+        font-size: 30px;
+        padding: 5rem 0 5rem 0;
+    }
+
+    .benefits-list_network {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 50px;
+    }
+
+    .cases-section__network {
+        display: grid;
+        justify-items: center;
+    }
+
+    .second-cases-section {
+        padding-left: 2rem;
+        padding-top: 3rem;
+    }
+
+    .first-cases-section {
+        width: 50%;
+        padding-top: 3rem;
+    }
+
+    .cases-section_title {
+        font-size: 35px;
+    }
+
+    .carousel-container {
+        height: 200px;
+        box-shadow: 0px 15px 40px 15px #080a7040;
+        width: 45%;
+    }
+
+    .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .slider-company-thumb .title {
+        font-size: 20px;
+    }
+
+    .additional-features {
+        display: grid;
+    }
+
+    .features-section__left {
+        display: grid;
+        width: 45%;
+        padding-bottom: 20px;
+    }
+
+    .features-section__right {
+        display: grid;
+        width: 45%;
+    }
+
+    .features-section {
+        display: grid;
+        grid-gap: 60px;
+        grid-template-columns: 1fr;
+        padding-bottom: 10rem;
+        justify-items: center;
+    }
+
+    .featured-product-card {
+        width: 80%;
+    }
+
+    .reverse {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .featured-product-card__product-info button {
+        width: 100%;
+        padding: 20px 28px;
+        height: 100%;
+    }
+
+    .featured-product-card__get-button {
+        width: 100%;
+        padding: 20px 28px;
+        height: 100%;
+    }
 }

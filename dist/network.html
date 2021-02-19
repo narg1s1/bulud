@@ -371,7 +371,7 @@
 				<!-- Service-info -->
 
 				<!-- Categories menu-->
-				<div class="categories">
+				<div class="categories sticky">
 					<div class="bg-video ">
 						<video class="lazy" autoplay muted loop playsinline>
 							<source data-src="videos/network.mp4" type="video/mp4">
@@ -379,7 +379,7 @@
 					</div>
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-xl-8 offset-xl-2">
+							<div class="col-xl-8 offset-xl-2 anchors-menu">
 								<div class="reverse">
 									<a href="#families"><button class="service-button active">VMs categories & families</button></a>
 									<a href="#benefits"><button class="service-button">Benefits</button></a>
@@ -394,52 +394,52 @@
 				<!-- Categories menu-->
 
 				<!-- Benefits -->
-				<div class="container-fluid gray" id="network">
-					<div class="row">
+				<div class="container-fluid gray" id="benefits">
+					<div class="row" style="width: 100%;">
 						<div class="col-xl-8 offset-xl-2 info__network">
 							<p class="container-title">Benefits</p>
-							<ul class="benefits-list_network">
-								<li>
-									<img src="images/full-control.png">
-									<img src="images/dash.png" style="margin-top: 15px;">
-									<div>
+							<div class="benefits-list_network">
+								<div class="benefits-list-item">
+									<img src="images/icons/icon-full-control.svg">
+									<img src="images/icons/icon-dash.svg" style="margin-top: 15px;">
+									<div class="benefits-list-types">
 										<p class="title">Layer-7 Load Balancing</p>
-										<p>ALB can load <br>
+										<p class="description">ALB can load <br>
 											balance HTTP/HTTPS traffic to targets – <br>
 											Azcloud VMs based on request <br>
 											attributes (such as X-Forwarded-Proto, <br>
 											X-Forwarded-Port, or X-Forwarded-For <br>
 											headers).</p>
 									</div>
-								</li>
+								</div>
 								
-								<li>
-									<img src="images/elasticity.png">
-									<img src="images/dash.png" style="margin-top: 15px;">
-									<div>
+								<div class="benefits-list-item">
+									<img src="images/icons/icon-scalability.svg">
+									<img src="images/icons/icon-dash.svg" style="margin-top: 15px;">
+									<div class="benefits-list-types">
 										<p class="title">Elasticity</p>
-										<p>Automatically scale up storage capacity</p>
+										<p class="description">Automatically scale up storage capacity</p>
 									</div>
-								</li>
-								<li>
-									<img src="images/security.png">
-									<img src="images/dash.png" style="margin-top: 15px;">
-									<div>
+								</div>
+								<div class="benefits-list-item">
+									<img src="images/icons/icon-flexibility.svg">
+									<img src="images/icons/icon-dash.svg" style="margin-top: 15px;">
+									<div class="benefits-list-types">
 										<p class="title">Security</p>
-										<p>– ALB enables to create and <br>
+										<p class="description">– ALB enables to create and <br>
 											manage security groups associated with <br>
 											load balancing to provide additional <br>
 											networking and security options. <br>
 											Elasticity – automatically scale up <br>
 											storage capacity</p>
 									</div>
-								</li>
-								<li>
-									<img src="images/flexibility.png">
-									<img src="images/dash.png" style="margin-top: 15px;">
-									<div>
+								</div>
+								<div class="benefits-list-item">
+									<img src="images/icons/icon-performance.svg">
+									<img src="images/icons/icon-dash.svg" style="margin-top: 15px;">
+									<div class="benefits-list-types">
 										<p class="title">Flexibility</p>
-										<p>You will be able to change
+										<p class="description">You will be able to change
 											your backend <br> infrastructure without
 											affecting the <br> availability of your
 											services, enabling seamless <br> horizontal
@@ -447,25 +447,25 @@
 											architecture redesigns, and more
 											</p>
 									</div>
-								</li>
-								<li>
-									<img src="images/cost.png">
-									<img src="images/dash.png" style="margin-top: 15px;">
-									<div>
+								</div>
+								<div class="benefits-list-item">
+									<img src="images/icons/icon-cost.svg">
+									<img src="images/icons/icon-dash.svg" style="margin-top: 15px;">
+									<div class="benefits-list-types">
 										<p class="title">Load Sharing</p>
-										<p>Sharing the processing <br>
+										<p class="description">Sharing the processing <br>
 											workload among a group of servers <br>
 											rather than relying on a single server <br>
 											prevents Azcloud VMs from being <br>
 											overwhelmed by requests.</p>
 									</div>
-								</li>
-								<li>
-									<img src="images/scalability.png">
-									<img src="images/dash.png" style="margin-top: 15px;">
-									<div>
+								</div>
+								<div class="benefits-list-item">
+									<img src="images/icons/icon-scalability.svg">
+									<img src="images/icons/icon-dash.svg" style="margin-top: 15px;">
+									<div class="benefits-list-types">
 										<p class="title">TLS Offloading</p>
-										<p>– with ALB-A customers <br>
+										<p class="descripttion">– with ALB-A customers <br>
 											can create an HTTPS listener, which <br>
 											 uses encrypted connections (also <br>
 											known as SSL offload). This feature <br>
@@ -477,8 +477,8 @@
 											preserving the source IP address for
 											your <br> back-end applications</p>
 									</div>
-								</li>
-							</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -527,25 +527,25 @@
 											</a>
 										</div>
 										<div class="swiper-slide">
-											<a class="slider-company-thumb" href="#" target="_blank">
+											<a class="slider-company-thumb company-thumb" href="#" target="_blank">
 												<p>Snapshots</p>
 												<p>Create snapshot and keep them in ASB Standard</p>
 											</a>
 										</div>
 										<div class="swiper-slide">
-											<a class="slider-company-thumb" href="#" target="_blank">
+											<a class="slider-company-thumb company-thumb" href="#" target="_blank">
 												<p>Images</p>
 												<p>Ability to boot templates from snapshots </p>
 											</a>
 										</div>
 										<div class="swiper-slide">
-											<a class="slider-company-thumb" href="#" target="_blank">
+											<a class="slider-company-thumb company-thumb" href="#" target="_blank">
 												<p>Logging</p>
 												<p>Recording of actions performed on created file system</p>
 											</a>
 										</div>
 										<div class="swiper-slide">
-											<a class="slider-company-thumb" href="#" target="_blank">
+											<a class="slider-company-thumb company-thumb" href="#" target="_blank">
 												<p>Metrics</p>
 												<p>Total volume size size, used space on volume size, IOPS usage</p>
 											</a>
@@ -554,27 +554,36 @@
 
 									<div class="swiper-pagination"></div>
 
-									<div class="swiper-button-prev masked hidden-991">
+									<div class="swiper-button-prev masked hidden-991" onclick="plusDivs(-1)">
 										<i class="icon-arrow-left"></i>
 									</div>
-									<div class="swiper-button-next masked hidden-991">
+									<div class="swiper-button-next masked hidden-991" onclick="plusDivs(1)">
 										<i class="icon-arrow-right"></i>
 									</div>
 								</div>
 							</div>
-							
 						</div>
+						
 						<div class="col-xl-8 offset-xl-2">
 							<p class="container-title">Additional Features</p>
 							<div class="additional-features">
 								<div class="features-section__left">
-									<p>User Authentication – ABL will securely authenticate users as they access cloud applications. </p>
+									<p>User Authentication – ABL will securely
+										authenticate users as they access cloud
+										applications. </p>
 									<div class="hr-line"></div>
-									<p>Content-based Routing – ABLcan route a request to a service based on the content of the request such as Host field, Path URL, HTTP header, HTTP method, Query string or Source IP address.</p>
+									<p>Content-based Routing – ABLcan route
+										a request to a service based on the
+										content of the request such as Host
+										field, Path URL, HTTP header, HTTP
+										method, Query string or Source IP
+										address.</p>
 								</div>
 								
 								<div class="features-section__right">
-									<p>Desync Mitigation Mode – Desync mitigation mode protects your application from issues due to HTTP Desync.
+									<p>Desync Mitigation Mode – Desync
+										mitigation mode protects your
+										application from issues due to HTTP Desync.
 										</p>
 									<div class="hr-line" style="width: 100%;"></div>
 									<p>Health Checks - HTTPS, gRPC</p>
@@ -587,7 +596,7 @@
 
 				
 				<!--Categories & Families-->
-				<div class="container-fluid">
+				<div class="container-fluid" id="families">
 					<div class="row">
 						<div class="col-xl-8 offset-xl-2">
 							<div class="features-section">
@@ -601,7 +610,14 @@
 											<h2>Standart</h2>
 											<p style="color: #080A70; font-size: 18px;">ALB-A <b>Standard</b> is the best choice for Static websites and blogs with low to moderate traffic.</p>
 											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). <b>FREE</b> for ALB Standard</p>
-											<div></div>
+											<div class="select-options">
+												<p>Performance</p>
+												<img src="images/icons/arrow-down.svg">
+											</div>
+											<div class="select-options">
+												<p>Billing</p>
+												<img src="images/icons/arrow-down.svg">
+											</div>
 											<a href="#">Collapse all</a>
 										</div>
 										<div class="footer-price">
@@ -629,7 +645,14 @@
 											<h2>Ultra</h2>
 											<p style="color: #080A70; font-size: 18px;">ALB-A <b>Ultro</b> is the best choice for Static websites and blogs with low to moderate traffic.</p>
 											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). <b>FREE</b> for ALB Standard</p>
-											<div></div>
+											<div class="select-options">
+												<p>Performance</p>
+												<img src="images/icons/arrow-down.svg">
+											</div>
+											<div class="select-options">
+												<p>Billing</p>
+												<img src="images/icons/arrow-down.svg">
+											</div>
 											<a href="#">Collapse all</a>
 										</div>
 										<div class="footer-price">
@@ -657,7 +680,14 @@
 											<h2>Turbo</h2>
 											<p style="color: #080A70; font-size: 18px;">ALB-A <b>Turbo</b> is the best choice for Static websites and blogs with low to moderate traffic.</p>
 											<p>LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). <b>FREE</b> for ALB Standard</p>
-											<div></div>
+											<div class="select-options">
+												<p>Performance</p>
+												<img src="images/icons/arrow-down.svg">
+											</div>
+											<div class="select-options">
+												<p>Billing</p>
+												<img src="images/icons/arrow-down.svg">
+											</div>
 											<a href="#">Collapse all</a>
 										</div>
 										<div class="footer-price">
@@ -1073,6 +1103,7 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/blog.js"></script>
 		<script type="text/javascript" src="js/service.js"></script>
+		<script type="text/javascript" src="js/carousel.js"></script>
 	</body>
 
 </html>
