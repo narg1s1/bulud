@@ -197,7 +197,7 @@ button:active {
 .featured-product-card__product-info {
     padding: 35px 48px;
     display: grid;
-    height: 240px;
+    height: 100%;
 }
 
 .featured-product-card__product-info  p {
@@ -781,7 +781,7 @@ tr:hover a {
     }
 
     .featured-product-card__product-info {
-        grid-gap: 55px;
+        padding: 35px 30px;
     }
 
     .reverse {
