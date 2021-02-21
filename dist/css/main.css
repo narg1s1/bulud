@@ -339,11 +339,13 @@ button:active {
     grid-gap: 5rem;
 }
 
-.cases-section_buttons {
+.cases-section_buttons button:active {
     /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 20px 20px; */
+    background-color: #fff;
+    color: #080A70;
 }
 
 .cases-section_buttons button {
@@ -827,6 +829,11 @@ select {
         padding-bottom: 3rem;
         justify-items: center;
         height: auto;
+    }
+
+    .description-text {
+        position: inherit;
+        display: contents;
     }
 
     .cases-section_buttons {
