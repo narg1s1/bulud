@@ -18,6 +18,10 @@ button:active {
     font-style: SemiBold;
 }
 
+.tabcontent {
+    display: none;
+}
+
 .button-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,7 +55,8 @@ button:active {
 .button-container_network {
     display: flex;
     gap: 20px 20px;
-    padding-top: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
     width: max-content;
 }
 
@@ -540,24 +545,6 @@ button:active {
     position: relative;
 }
 
-.select-options {
-    display: flex;
-}
-
-.select-options p {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 48px;
-    width: 100%;
-    letter-spacing: 0.04em;
-    text-align: left;
-    color: #000BAB;
-}
-
-.select-options img{
-    width: 20px;
-}
-
 .field-item:hover {
   transition: top 0.25s;
 }
@@ -631,6 +618,30 @@ tr:hover a {
 
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-size: inherit;
+    background-image: url(/dist/images/icons/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 12px;
+    border: none;
+    color: #000BAB;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 48px;
+}
+
+.select-options {
+    display: flex;
+}
+
+.select-options img{
+    width: 20px;
+}
+
 @media (max-width: 575px) {
 
     .sticky {
@@ -640,6 +651,10 @@ tr:hover a {
 
     .service-item .price {
         justify-content: center;
+    }
+
+    .service-button {
+        width: max-content;
     }
 
     .card-service {
