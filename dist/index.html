@@ -119,26 +119,26 @@
 								<div class="col-md-3">
 									<nav>
 										<ul class="menu-links">
-											<li class="visible-1200">
+											<li id="default" class="visible-1200">
 												<a href="login.html">Qiriş / </a>
 												<a href="register.html">Qeydiyyat</a>
 											</li>
-											<li>
+											<li id="default">
 												<a href="index.html">Əsas səhifə</a>
 											</li>
-											<li>
+											<li id="default">
 												<a href="about.html">Haqqımızda</a>
 											</li>
-											<li>
+											<li id="services">
 												<a href="services.html">Xidmətlər</a>
 											</li>
-											<li>
+											<li id="default">
 												<a href="blog.html">Bloq</a>
 											</li>
-											<li>
+											<li id="default">
 												<a href="partnership.html">Əməkdaşlıq</a>
 											</li>
-											<li>
+											<li id="default">
 												<a href="contact.html">Əlaqə</a>
 											</li>
 										</ul>
@@ -146,7 +146,8 @@
 								</div>
 								<!-- Col-->
 
-								<div class="col-md-9">
+								<!-- Menu -->
+								<div class="col-md-9" id="menu">
 									<div class="services-grid flex">
 										<div class="service-card wider">
 											<div class="rotator">
@@ -254,14 +255,72 @@
 									</div>
 									<!-- Services grid-->
 								</div>
+								<!-- Menu -->
+
 
 								<!-- Hover Services -->
-								<div class="col-md-9">
-									
+								<div class="col-md-9" id="service-container">
+									<div class="flex menu-service">
+										<div style="display: flex;">
+											<div class="card-service wider">
+												<div class="rotator">
+													<div class="card-front">
+														<a class="service-item">
+															<span class="title">Compute</span>
+															<span class="subtitle">resurs elastikliyi</span>
+															<span class="price">
+																<div class="button-container">
+																	<button class="service-button" onclick="document.location='compute.html'">ACS</button>
+																	<button class="service-button" onclick="document.location='compute.html'">AVPG</button>
+																	<button class="service-button" onclick="document.location='compute.html'">ASG</button>
+																</div>
+															</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<!-- Service card-->
+
+											<div class="" style="width: 50%;">
+												<div class="rotator">
+													<div class="card-front">
+														<a class="service-item">
+															<span class="title">Storage</span>
+															<span class="subtitle">resurs elastikliyi</span>
+															<span class="price">
+																<div class="button-container">
+																	<button class="service-button"  onclick="document.location='storage.html'">ASB</button>
+																</div>
+															</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<!-- Service card-->
+										</div>
+										<div class="service-card-wider">
+											<div class="rotator">
+												<div class="card-front">
+													<a class="service-item">
+														<span class="title">Networking</span>
+														<span class="subtitle">resurs elastikliyi</span>
+														<span class="price">
+															<div class="button-container">
+																<button class="service-button"  onclick="document.location='network.html'">AVPS</button>
+																<button class="service-button"  onclick="document.location='network.html'">ASG</button>
+																<button class="service-button"  onclick="document.location='network.html'">API</button>
+																<button class="service-button"  onclick="document.location='network.html'">ALB-A</button>
+																<button class="service-button" 	onclick="document.location='network.html'">ADD</button>
+															</div>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Services grid-->
 								</div>
 								<!-- Hover Services -->
-
-
 								<!-- Col-->
 							</div>
 						</div>
@@ -442,6 +501,7 @@
 									<div class="card-service">
 										<div class="rotator">
 											<div class="card-front">
+												<div class="card-bg cover-center" style="background-image: url(images/service-card-bg.jpg)"></div>
 												<a class="service-item">
 													<span class="title">Compute</span>
 													<span class="subtitle">resurs elastikliyi</span>
@@ -1441,6 +1501,7 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/blog.js"></script>
 		<script type="text/javascript" src="js/service.js"></script>
+		<script type="text/javascript" src="js/mouseenter.js"></script>
 	</body>
 
 </html>
