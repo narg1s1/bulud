@@ -32,22 +32,29 @@ $(document).ready(function() {
     $(function(){
         $("#service-container").hide();
     
-        $("#services").mouseenter(function(){
-            $("#menu").hide();
-            $("#service-container").fadeIn(600);
-        });
+        // $("#services").mouseenter(function(){
+        //     $("#service-container").fadeIn();
+        //     $("#menu").hide();
+        // });
     });
 
-    $('.service-button').click(function(){
-        $('.service-button').removeClass('active').addClass('inactive');
-        $(this).removeClass('inactive').addClass('active');
+    $(".card-front").hover(function(){
+        $(this).css('background-image', 'url(images/service-card-bg.jpg)');
+        $(this).css('background-size', 'cover');
+        $(this).css('background-position', 'center');
+        $(this).css('background-repeat', 'no-repeat')
+    }, function() {
+        $(this).css('background-image', 'none')
     });
-    
-    // $(function(){
-    
-    //     $(".service-button").hover(function(){
-    //         $('#theDiv').prepend('<img src="images/service-card-bg.jpg">')
-    //     });
-    // });
 });
 
+$(function(){
+    var prev;   
+  
+    $('.btn-service').hover(function(){
+        prev = $(this).text();
+        $(this).text(`${prev} Public IPs`);
+    }, function(){
+        $(this).text(prev)
+    });
+})

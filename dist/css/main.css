@@ -3,7 +3,6 @@ img {
     width: 100%;
 }
 
-
 .tabcontent {
     display: none;
 }
@@ -18,7 +17,6 @@ img {
 
 #service-container {
     width: max-content;
-    /* border: 0.1px solid rgba(255, 255, 255, 0.2); */
 }
 
 .menu-service {
@@ -28,6 +26,13 @@ img {
 .service-grid {
     border: 0.5px solid rgba(255, 255, 255, 0.5);
 }
+
+/* .card-front:hover {
+    background-image: url(images/service-card-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
 
 .card-service {
     width: 50%;
@@ -47,8 +52,9 @@ img {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.service-button .active {
+.service-button:focus {
     background: #fff;
+    color: #000bab;
 }
 
 .service-button:hover {
@@ -58,10 +64,12 @@ img {
 
 .button-container_network {
     display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
     gap: 20px 20px;
-    padding-top: 7rem;
-    padding-bottom: 3rem;
-    width: max-content;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .button-container_network button {
@@ -78,6 +86,10 @@ img {
     padding: 16px 32px;
 }
 
+.button-container_network .active {
+    background: #000BAB;
+    color: #fff;
+}
 
 .gray {    
     background-color: #F5F6FB;
@@ -88,6 +100,12 @@ img {
 
 .blue {
     background: #080A70;
+}
+#benefits {
+    padding-top: 10rem;
+}
+#categories {
+    padding-top: 10rem;
 }
 
 .categories {
@@ -131,7 +149,6 @@ img {
     height: auto;
     width: 100%;
     position: relative;
-    box-shadow: 0px 18px 15px #ECECEC;
 }
 
 .featured-product-card_network {
@@ -147,9 +164,13 @@ img {
     height: inherit;
 }
 
+.product-card {
+    box-shadow: 0px 24px 40px rgba(8, 10, 112, 0.15);
+}
+
 .center-card {
     height: 720px;
-    box-shadow: 0px 0px 40px #ececec;
+    box-shadow: 0px 27.5285px 45.8809px rgba(8, 10, 112, 0.15);
 }
 
 .center-card .featured-product-card__product-subtitle {
@@ -363,13 +384,8 @@ img {
     grid-gap: 5rem;
 }
 
-.cases-section_buttons button:active {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    gap: 20px 20px; */
-    background-color: #fff;
-    color: #080A70;
+.cases-section_buttons button:focus {
+    border: 1px solid #fff;
 }
 
 .cases-section_buttons button {
@@ -673,6 +689,7 @@ select {
     width: 20px;
 }
 
+/* .flex{display:grid;flex-wrap:wrap} */
 
 @media screen and (max-width: 600px) {
 
